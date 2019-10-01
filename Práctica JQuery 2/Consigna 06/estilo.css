@@ -1,0 +1,14 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.caja-texto{
+    text-align: left !important;
+}
+
+.input{
+    padding: 20px;
+    text-align: center;
+    border-right: 2px solid black;
+}

@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+td{
+    padding: 10px;
+    border: 1px solid black;
+}
+
+table{
+    text-align: left;
+    border-collapse: collapse;
+    width: 100;
+    margin: auto;
+}
+
+input[type="button"]{
+    width: 60px;
+}
+
+select{
+    width: 309px;
+}

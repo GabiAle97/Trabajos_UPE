@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/792fa77689.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
+    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css"
+        media="all">
+    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css"
+        media="all">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Nombre Completo</th>
+                    <th>Tipo Documento</th>
+                    <th>Nro Documento</th>
+                    <th>Nota 1º Parcial</th>
+                    <th>Nota 2º Parcial</th>
+                    <th>Nota Rec 1º Parcial</th>
+                    <th>Nota Rec 2º Parcial</th>
+                    <th>Nota Final</th>
+                    <th>Resultado</th>
+                </tr>
+            </thead>
+            <tbody id="tabla">
+                <tr>
+                    <td>Ruben Roig Aguilar</td>
+                    <td>DNI</td>
+                    <td>40123142</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>AUSENTE</td>
+                    <td>AUSENTE</td>
+                    <td>3</td>
+                    <td>RECURSA</td>
+                </tr>
+                <tr>
+                    <td>Alba Bravo</td>
+                    <td>LC/LE</td>
+                    <td>829763</td>
+                    <td>7</td>
+                    <td>4</td>
+                    <td>AUSENTE</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>A FINAL</td>
+                </tr>
+                <tr>
+                    <td>Gabriel Pereyra</td>
+                    <td>DNI</td>
+                    <td>40672909</td>
+                    <td>8</td>
+                    <td>7</td>
+                    <td>AUSENTE</td>
+                    <td>AUSENTE</td>
+                    <td>7</td>
+                    <td>PROMOCIONA</td>
+                </tr>
+                <tr>
+                    <td>Dina Campos</td>
+                    <td>DNI</td>
+                    <td>39928309</td>
+                    <td>2</td>
+                    <td>AUSENTE</td>
+                    <td>AUSENTE</td>
+                    <td>AUSENTE</td>
+                    <td>1</td>
+                    <td>AUSENTE</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <a class="btn btn-primary" data-toggle="modal" href='#regEstudiante'>Ingresar Estudiante</a>
+    <button id="sort" class="btn btn-primary">Ordenar Alfabéticamente</button>
+    <div class="modal fade" id="regEstudiante">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Ingresar Estudiante</h4>
+                </div>
+                <form action="#" class="modal-body">
+                    <div>
+                        <table class="container col-sm-12 col-xs-12 col-lg-12 col-md-12 form-group">
+                            <tr>
+                                <td class="col-sm-6 col-xs-6 col-md-6">
+                                    <label for="nombre" class="col-md-12">Nombre y Apellido: </label>
+                                </td>
+                                <td class="col-sm-6 col-xs-6 col-md-6 inputFormulario">
+                                    <input type="text" name="nombre" id="nombre" class="form-control"
+                                        required="required" pattern="^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]{3,29} *){2,}"
+                                        title="Debe tener Nombre y Apellido siempre empezando con Mayuscula y con 4 o más caracteres">
+                                    <p id="resultadoNom"></p>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="col-sm-6 col-xs-6 col-md-6">
+                                    <label for="documento" class="col-md-12">Tipo Documento: </label>
+                                </td>
+                                <td class="col-sm-6 col-xs-6 col-md-6 inputFormulario">
+                                    <select name="documento" id="documento" class="form-control" required="required">
+                                        <option value="dni">DNI</option>
+                                        <option value="lcle">LC/LE</option>
+                                    </select>
+                                    <p id="resultadoTipoDoc"></p>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="col-sm-6 col-xs-6 col-md-6">
+                                    <label for="nroDoc" class="col-md-12">Nro Documento: </label>
+                                </td>
+                                <td class="col-sm-6 col-xs-6 col-md-6 inputFormulario">
+                                    <input type="number" name="nroDoc" id="nroDoc" class="form-control" min="1000000"
+                                        max="99999999" required="required"
+                                        title="Ingrese su DNI (de 7 a 8 digitos)">
+                                        <p id="resultadoDoc"></p>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="col-sm-6 col-xs-6 col-md-6">
+                                    <label for="1erParcial" class="col-md-12">Nota 1er Parcial: </label>
+                                </td>
+                                <td class="col-sm-6 col-xs-6 col-md-6 inputFormulario">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" id="ausente1erP" value="ausente">
+                                            Ausente
+                                        </label>
+                                    </div>
+                                    <input type="number" name="1erParcial" id="1erParcial" class="form-control" min="1"
+                                        max="10" required="required" title="Nota del examen entre 1 y 10">
+                                        <p id="resultado1erP"></p>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="col-sm-6 col-xs-6 col-md-6">
+                                    <label for="2doParcial" class="col-md-12">Nota 2do Parcial: </label>
+                                </td>
+                                <td class="col-sm-6 col-xs-6 col-md-6 inputFormulario">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" id="ausente2doP" value="ausente">
+                                            Ausente
+                                        </label>
+                                    </div>
+                                    <input type="number" name="2doParcial" id="2doParcial" class="form-control" min="1"
+                                        max="10" required="required" title="Nota del examen entre 1 y 10">
+                                        <p id="resultado2doP"></p>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="col-sm-6 col-xs-6 col-md-6">
+                                    <label for="rec1erParcial" class="col-md-12">Nota Rec 1er Parcial: </label>
+                                </td>
+                                <td class="col-sm-6 col-xs-6 col-md-6 inputFormulario">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" id="ausenteRec1erP" value="ausente">
+                                            Ausente
+                                        </label>
+                                    </div>
+                                    <input type="number" name="rec1erParcial" id="rec1erParcial" class="form-control"
+                                        min="1" max="10" required="required" title="Nota del examen entre 1 y 10">
+                                        <p id="resultadoRec1erP"></p>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="col-sm-6 col-xs-6 col-md-6">
+                                    <label for="rec2doParcial" class="col-md-12">Nota Rec 2do Parcial: </label>
+                                </td>
+                                <td class="col-sm-6 col-xs-6 col-md-6 inputFormulario">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" id="ausenteRec2doP" value="ausente">
+                                            Ausente
+                                        </label>
+                                    </div>
+                                    <input type="number" name="rec2doParcial" id="rec2doParcial" class="form-control"
+                                        min="1" max="10" required="required" title="Nota del examen entre 1 y 10">
+                                        <p id="resultadoRec2doP"></p>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    <button type="submit" id="submitBttn" class="btn btn-primary">Ingresar</button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="errorForm">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Validación del formulario con resultado negativo</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Hay errores de validación en el formulario. Por favor, verifique y reingrese los datos</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="cerrarModalAlert" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

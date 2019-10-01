@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+.valido{
+    border-color:green !important;
+}
+
+.invalido{
+    border-color: red !important;
+}
+
+.td-nota-ausente{
+    background-color: 	rgb(241, 218, 122)
+}
+
+.td-nota-reprobado{
+    background-color: rgb(223, 99, 105)
+}
+
+.td-nota-aprobado{
+    background-color: rgb(154, 243, 124)
+}
+
+.td-nota-promocionado{
+    background-color: rgb(118, 199, 236)
+}

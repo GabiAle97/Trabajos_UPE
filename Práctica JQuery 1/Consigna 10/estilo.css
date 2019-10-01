@@ -1,0 +1,32 @@
+*{
+    padding: 5px;
+    margin: 0;
+    text-align: left;
+    transition: all 500ms cubic-bezier(1,0,0,1);
+}
+
+.contenedor{
+    width: 100;
+    margin: auto;
+}
+
+#boton{
+    display: block;
+    width: 100px;
+    margin: auto;
+}
+
+.visible{
+    display: block !important;
+}
+
+.oculto{
+    display: none;
+}
+
+.correcto{
+    border: 2px solid green;
+}
+.incorrecto{
+    border: 2px solid red;
+}

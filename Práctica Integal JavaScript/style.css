@@ -1,0 +1,200 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+
+.content-all{
+    width: 100%;
+    margin-top: 40px;
+    background-color: cadetblue;
+}
+
+.icon-menu{
+    position: fixed;
+    top: 5px;
+    font-size: 26px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.titulo-pag{
+    font-family: 'Times New Roman', Times, serif;
+    position: fixed;
+    width: 100%;
+    top: 5px;
+    right: 5px;
+    text-align: center;
+}
+
+header{
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    background: tomato;
+    left: 0;
+    top: 0;
+}
+
+input[type="radio"],input[type="checkbox"]{
+    display: none;
+}
+
+#check:checked ~ .menu{
+    width: 170px;
+}
+
+.formulario{
+    display: block;
+    width: 260px;
+    margin:auto;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.formulario label{
+    display: block;
+    position: absolute;
+    width: 150px;
+    margin-top: -54px;
+}
+
+.input-contacto{
+    display: block;
+    width: 200px;
+    margin-left: 160px;
+    margin-top: 0px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    outline: none;
+}
+
+
+.observaciones{
+    margin-left: 80px !important;
+}
+
+input[id="nombre"]:focus ~ label[for="nombre"],
+input[id="apellido"]:focus ~ label[for="apellido"],
+input[id="mail"]:focus ~ label[for="mail"],
+input[id="telefono"]:focus ~ label[for="telefono"],
+input[id="nacimiento"]:focus ~ label[for="nacimiento"]{
+    font-style: italic;
+    font-weight: bold;
+}
+
+input:required:invalid, textarea:required:invalid{
+    border: 2px solid red;
+}
+
+input:required:valid, textarea:required:valid{
+    border: 2px solid green;
+}
+
+input[type="submit"]{
+    display: block;
+    width: 70px;
+    margin-left: 145px;
+}
+
+.menu{
+    position: fixed;
+    width: 0px;
+    height: 100vh;
+    background: tomato;
+    transition: all 500ms cubic-bezier(1,0,0,1);
+    transition-timing-function: cubic-bezier(1,0,0,1.5);
+    overflow: hidden;
+}
+
+.material, .actividades, .entregables{
+    height: 48px;
+    transition: all 500ms cubic-bezier(1,0,0,1);
+    transition-timing-function: cubic-bezier(1,0,0,1.5);
+    overflow: hidden;
+}
+
+.upe{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 30px;
+}
+
+.datos-contacto{
+    position: absolute;
+    bottom: 0;
+}
+
+.direccion, .comunicacion{
+    position: absolute;
+    bottom: 9px;;
+    border-radius: 10px;
+    border: 2px solid darkslateblue;
+    background-color: dodgerblue;
+    color: white;
+    font-weight: bold;
+    
+}
+
+.direccion{
+    width: 300px;
+    margin-left: 280px;
+}
+
+.comunicacion{
+    width: 410px;
+    margin-left: 590px;
+}
+
+.contenedor{
+    background-color: orange;
+    text-align: left;
+    border-collapse: collapse;
+    width: 100;
+    margin: auto;
+}
+
+th,td{
+    padding: 20px;
+}
+
+thead{
+    background-color: #246355;
+    border-bottom: 5px solid #0F362D;
+    color: white;
+}
+
+tr:nth-child(even){
+    background-color: green;
+}
+
+tr:hover td{
+    background-color: #369681;
+    color: white
+}
+
+#check-material:checked ~ .material, #check-actividades:checked ~ .actividades, #check-entregables:checked ~ .entregables{
+    height: 150px;
+}
+
+.submenu{
+    margin-top: 15px;
+}
+
+
+
+.menu li{
+    list-style: none;
+    padding: 16px;
+    cursor: pointer;
+    transition: all 300ms;
+    display: block;
+    width: 400px;
+}
+
+.menu li:hover{
+    background: rgba(0, 0, 0, 0.2)
+}

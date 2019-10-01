@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <div class="content-all">
+        <header></header>
+        <input type="checkbox" id="check">
+        <label for="check" class="icon-menu"><img src="menu.png" style="width: 30px;height: 30px;"></label>
+
+        <h2 class="titulo-pag">Contacto con la UPE</h2>
+        <nav class="menu">
+            <ul>
+                <form action="">
+                    <input type="radio" id="check-material" name="opcion" value="Material">
+                    <input type="radio" id="check-actividades" name="opcion" value="Actividades">
+                    <input type="radio" id="check-entregables" name="opcion" value="Entregables">
+                    <li class="material">
+
+                        <label for="check-material">Material</label>
+
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="#">Apuntes</a></li>
+                                <li><a href="#">Links</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="actividades">
+
+                        <label for="check-actividades">Actividades</label>
+
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="#">Consignas</a></li>
+                                <li><a href="#">TPs</a></li>
+                            </ul>
+                        </div>
+
+                    </li>
+                    <li class="entregables">
+
+                        <label for="check-entregables">Entregables</label>
+
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="#">Notas TP</a></li>
+                                <li><a href="#">Notas Exámenes</a></li>
+                            </ul>
+                        </div>
+
+                    </li>
+                    <li class="contacto">
+                        <a href="notas.html">Notas</a>
+                    </li>
+                    <li class="upe">
+                        <a href="http://www.upe.edu.ar" target="_blank"><img src="logoupe.png"
+                                style="width: 150px; height: 70px;"></a>
+                    </li>
+                </form>
+            </ul>
+        </nav>
+        <div class="formulario">
+            <form action="contacto.php" method="POST">
+                <input type="text" id="nombre" required autocomplete="off" class="input-contacto"><br><br>
+                <label for="nombre" >Nombre: </label>
+                <input type="text" id="apellido" required autocomplete="off" class="input-contacto"><br><br>
+                <label for="apellido" >Apellido: </label>
+                <input type="email" id="mail" required autocomplete="off" class="input-contacto"><br><br>
+                <label for="mail" >Email: </label>
+                <input type="number" id="telefono" autocomplete="off" class="input-contacto"><br><br>
+                <label for="telefono" >Teléfono: </label>
+                <input type="number" id="nacimiento" min="1910" max="2014" required autocomplete="off" class="input-contacto"><br><br>
+                <label for="nacimiento" >Año de nacimiento: </label>
+                <textarea name="observaciones" id="observaciones" cols="30" rows="10" required autocomplete="off" placeholder="Escriba aquí sus observaciones..." class="input-contacto observaciones"></textarea><br>
+                <input type="submit" value="Enviar">
+    
+            </form>
+        </div>
+        <p class="datos-contacto">
+            <a href="http://www.facebook.com/UPE.EZE/" target="_blank"><img src="facebook.png" ></a>
+            <a href="http://twitter.com/Univ_Ezeiza" target="_blank"><img src="twitter.png" ></a>
+            <a href="http://www.instagram.com/univ_ezeiza/" target="_blank"><img src="instagram.png" ></a>
+            <a href="http://www.youtube.com/channel/UC275vWtRC8Cboy-YxePNGQw" target="_blank"><img src="youtube.png" ></a>
+            <a href="https://ar.linkedin.com/in/universidad-provincial-de-ezeiza-998716176" target="_blank"><img src="linkedin.png" ></a>
+            <div class="direccion">
+                <p>Alfonsina Storni 41 – CP 1802 – Ezeiza – Buenos Aires – Argentina</p>
+            </div>
+            <div class="direccion">
+                <p>Alfonsina Storni 41 – CP 1802 – Ezeiza – Buenos Aires – Argentina</p>
+            </div>
+            <div class="comunicacion">
+                <p>Telefonos: (+54) 011 4480 0513 // (+54) 011 4480 0428</p>
+                <p>Mail: <i>info@upe.edu.ar</i></p>
+            </div>
+        </p>
+    </div>
+    
+</body>
+
+</html>

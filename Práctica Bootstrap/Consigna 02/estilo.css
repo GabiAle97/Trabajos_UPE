@@ -1,0 +1,18 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.img-thumbnail{
+    width: 300px !important;
+    height: 200px !important;
+}
+
+.modal-content{
+    width: 100% !important;
+}
+
+.expandido{
+    width: 100% !important;
+    height: 100% !important;
+}

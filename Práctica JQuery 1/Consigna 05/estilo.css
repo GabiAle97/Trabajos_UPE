@@ -1,0 +1,32 @@
+th,td{
+    padding: 10px;
+}
+
+thead{
+    background-color: #246355;
+    border-bottom: 5px solid #0F362D;
+    color: white;
+}
+
+tr:nth-child(even){
+    background-color: green;
+}
+
+tr:hover td{
+    background-color: #369681;
+    color: white
+}
+
+.contenedor{
+    background-color: orange;
+    text-align: left;
+    border-collapse: collapse;
+    width: 100;
+    margin: auto;
+}
+
+*{
+    padding:0;
+    margin: 0;
+    text-align: center;
+}

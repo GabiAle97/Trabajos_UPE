@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/792fa77689.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Curriculum Vitae</h1>
+
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#home">Datos personales</a></li>
+        <li><a data-toggle="tab" href="#menu1">Antecedentes académicos</a></li>
+        <li><a data-toggle="tab" href="#menu2">Perfil profesional</a></li>
+        <li><a data-toggle="tab" href="#menu3">Otros conocimientos</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="home" class="tab-pane fade in active">
+            <div class="row">
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                    <img src="perfil.jpg" class="img-circle img-thumbnail" id="perfil" alt="">
+                </div>
+                <div class="col-md-10 col-xs-10 col-sm-10">
+                    <h1>Gabriel Pereyra</h1>
+                    <h4>Desarrolador</h4>
+
+                    <span class="label label-info"><i class="fa fa-id-card"></i> Cuil</span><br>
+                    <strong>20-40672909-6</strong><br><br>
+
+                    <span class="label label-info"><i class="fa fa-calendar-alt"></i> Fecha de nacimiento</span><br>
+                    <strong>05/08/1997</strong><br><br>
+
+                    <span class="label label-info"><i class="fa fa-phone"></i> Teléfono</span><br>
+                    <strong>(+54) 9 11 2390 5645</strong><br><br>
+
+                    <span class="label label-info"><i class="fa fa-envelope"></i> Email</span><br>
+                    <strong>Gabrielpereyra1997@gmail.com</strong><br><br>
+
+                    <span class="label label-info"><i class="fa fa-map-marker"></i> Residencia</span><br>
+                    <strong>Monte Grande, Buenos Aires, Argentina</strong><br><br>
+
+                    <span class="label label-info"><i class="fab fa-linkedin"></i> LinkedIn</span><br>
+                    <a target="_blank" href="http://www.linkedin.com/in/gabriel-pereyra-9157b1176/">Perfil
+                        LinkedIn</a><br><br>
+
+                    <span class="label label-info"><i class="fab fa-github"></i> Github</span><br>
+                    <a target="_blank" href="https://github.com/GabiAle97">Porfolio</a><br><br>
+
+
+                </div>
+            </div>
+        </div>
+        <div id="menu1" class="tab-pane fade">
+
+            <div class="alert alert-success">
+                <strong>Formación Académica</strong><br><br>
+
+                <span class="label label-success">Universidad Provincial de Ezeiza
+                </span>
+                <p class="text-right fechaAcont">FEB 2016 - DIC 2019</p>
+                Técnico Universitario en Desarrollo de Software
+
+            </div>
+
+            <div class="alert alert-danger">
+                <strong>Formación Complementaria</strong><br><br>
+
+                <span class="label label-danger
+                    ">Comunidad IT
+                </span>
+                <p class="text-right fechaAcont">FEB 2019 - MAY 2019</p>
+                Capacitación en Desarrollo de Aplicaciones (NodeJS)
+
+            </div>
+
+        </div>
+        <div id="menu2" class="tab-pane fade">
+
+            <div class="alert alert-info">
+                <strong>Descripcion de mi perfil: </strong><br><br>
+                Me encuentro capacitado para trabajar en grupo, con predisposición y actitud. Puedo ofrecer una
+                buena respuesta ante adversidades, y soy capaz de aprender técnicas y conocimientos nuevos a lo
+                largo del proyecto. Para finalizar, poseo una amplia capacidad de deducción, y de pensamiento lógico,
+                por lo que puedo aportar soluciones e ideas nuevas.
+            </div>
+
+        </div>
+        <div id="menu3" class="tab-pane fade">
+
+            <div class="table-responsive">
+                <table class="table table-hover table-bordered table">
+                    <thead>
+                        <tr>
+                            <th>Tecnologías</th>
+                            <th>Conocimientos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><i class="fab fa-php fa-5x"></i> PHP</td>
+                            <td>Manejo de variables y funciones</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fab fa-html5 fa-5x"></i><i class="fab fa-css3-alt fa-5x"></i>HTML5/CSS3</td>
+                            <td>Manejo de etiquetas, clases, estilos, animaciones, SPA y MPA</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fab fa-js-square fa-5x"></i> JAVASCRIPT</td>
+                            <td>Manejo de variables, librerías, funciones sincrónicas y asincronicas</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fab fa-node-js fa-5x"></i> NODEJS</td>
+                            <td>Arquitectura cliente/servidor, manejo de archivos, manejo de variables</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

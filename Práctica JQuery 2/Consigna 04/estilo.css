@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    display: none;
+}
+
+.visible {
+    display: inline-block;
+}
+
+
+button {
+    display: scroll;
+    position: fixed;
+    bottom: 250px;
+
+}
